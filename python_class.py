@@ -1,3 +1,23 @@
+# creating a class and why we need to use a class ####################################################
+class Dog:
+    pass
+
+
+dog1 = Dog()
+dog2 = Dog()
+
+dog1.name = "Jack"
+dog1.age = "3"
+
+dog2.name = "Rex"
+dog2.age = "5"
+
+print(f"This is a dog: {dog1.name}, {dog1.age}")
+print(f"This is a dog: {dog2.name}, {dog2.age}")
+
+print("{} {}".format(dog1.name, dog1.age))
+
+########################################################################################################
 # # class Dog:
 # #     # a function inside a class is called a method
 # #     def __init__(self, name, age):
@@ -19,7 +39,8 @@
 # #
 # # my_dog = Dog()
 # # print(my_dog)
-#
+
+########################################################################################################
 # # create a new class for reproducing voters card - name, age, sex, soo ( state of origin )
 # # instantiate the class to reproduce 5 voters card
 # class Voters:
@@ -50,7 +71,7 @@
 # print(folake)
 # def __str__(self):
 #     return f"This is my dog; {self.name},{self.age} "
-#
+########################################################################################################
 # # getters and setters
 # class Animal:
 #     def __init__(self, name="Rex", age=2):
@@ -76,26 +97,27 @@
 
 # print(my_dog)
 
-# inheritance -
+########################################################################################################
+# inheritance
 # super class
-
-class Human:
-    def __init__(self, name, height, age):
-        self.name = name
-        self.height = height
-        self.age = age
-
-
-# child class
-class Programmer(Human):
-    def __init__(self, name, height, age, languages):
-        #super(Programmer, self).__init__(name, height, age)
-        super().__init__(name, height, age)
-        self.languages = languages
-
-
-xo = Programmer("James", 100, 25, "Python")
-
-# bob = Programmer("Bob", 180, 100, ["Python", "Java"])
-
-print(xo.name) # Access to the name field inherited from the Human class
+#
+# class Human:
+#     def __init__(self, name, height, age):
+#         self.name = name
+#         self.height = height
+#         self.age = age
+#
+#
+# # child class
+# class Programmer(Human):
+#     def __init__(self, name, height, age, languages):
+#         # super(Programmer, self).__init__(name, height, age)
+#         super().__init__(name, height, age)
+#         self.languages = languages
+#
+#
+# xo = Programmer("James", 100, 25, "Python")
+#
+# # bob = Programmer("Bob", 180, 100, ["Python", "Java"])
+#
+# print(xo.name)  # Access to the name field inherited from the Human class
